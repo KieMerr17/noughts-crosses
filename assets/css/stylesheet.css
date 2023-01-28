@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+table {
+    background-color: black;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 60px;
+    background-color: white;
+    border: 1px solid black;
+    height: 140px;
+    width: 140px;
+}
+
+#scores-area {
+    text-align: center;
+    display: inline-block;
+}
+
+.scores {
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 5px;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#games-won {
+    color: green;
+}
+
+#games-lost {
+    color: red;
+}

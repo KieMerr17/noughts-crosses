@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noughts and Crosses</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <title>Noughts and Crosses</title>
 </head>
 <body>
     <header>
@@ -13,8 +19,8 @@
     </header>
 
     <section>
-        <div>
-            <table id="main-game">
+        <div id="main-game">
+            <table>
                 <tr>
                     <td id="cell-0">1</td>
                     <td id="cell-1">2</td>
@@ -36,23 +42,22 @@
         <div>
             <button>Rematch button</button>
         </div>
-        <div id="scores">
-            <div id="user-score">User Score</div>
-            <div id="computer-score">Computer Score</div>
+        <div id="scores-area">
+            <div class="scores">Games Won - <span id="games-won"><strong>0</strong></span></div>
+            <div class="scores">Games Lost - <span id="games-lost"><strong>0</strong></span></div>
         </div>
     </section>
 
     <footer>
         <div id="game-rules">
             <h2>GAME RULES:</h2>
-            <p>
-                The game requires two players, X and O.<br>
-                The player (You) is automatically assigned the 'X' piece.<br>
-                The game board is a set 3x3 grid in which players will place their symbol to claim that segment.<br>
-                X typically players first, then players alternate turns.<br>
-                The goal is to claim three segments of the grid in a row, either horizontally, vertically, or diagonally.<br>
-                The game is over either when one player achieves three segments in a row, OR when the grid is filled without anyone achieving three segments in a row.<br>
-            </p>
+                <p>The game has two players, X and O.<br>
+                    The player (You) is automatically assigned the 'X' piece.<br>
+                    The game board is a set 3x3 grid in which players will place their symbol to claim that segment.<br>
+                    X typically players first, then players alternate turns.<br>
+                    The goal is to claim three segments of the grid in a row, either horizontally, vertically, or diagonally.<br>
+                    The game is over either when one player achieves three segments in a row, OR when the grid is filled without anyone achieving three segments in a row.
+                </p>
         </div>
     </footer>
 </body>
