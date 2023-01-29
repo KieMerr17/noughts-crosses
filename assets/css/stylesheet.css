@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    background: url(/assets/images/pexels-lukas-628281.jpg)
+    background-color: #f1f7ed;
 }
 
 table {
@@ -11,8 +11,9 @@ table {
 }
 
 td {
+    color: #b33951;
     font-size: 60px;
-    background-color: white;
+    background-color: #91c7b1;
     border: 2px solid black;
     height: 140px;
     width: 140px;
@@ -52,4 +53,20 @@ td {
 
 li {
     line-height: 1.8rem;
+}
+
+#reset-button {
+    background-color: #54494b;
+    border: none;
+    border-radius: 10px;
+    color: #f1f7ed;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#reset-button:hover {
+    border-radius: 20px;
 }
