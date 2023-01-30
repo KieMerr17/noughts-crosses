@@ -25,13 +25,41 @@ function newGame() {
 // Cell event listener
 cells.forEach(cell => cell.addEventListener("click", inputPlayerSymbol));
 
-// Input the symbol of the current player into the box and switch player
+/**Input the symbol of the current player into the box and check for winner
+ * then continue on to switch player symbol
+ */
 function inputPlayerSymbol(event) {
-event.target.textContent = currentPlayer;
-currentPlayer = currentPlayer === "O" ? "X" : "O";
+    event.target.textContent = currentPlayer;
+    let winner = checkForWin();
+    if (winner) {
+        alert(`${winner} wins!`);
+        return;
+    }
+//switch player symbol after checking for win
+    currentPlayer = currentPlayer === "O" ? "X" : "O";
 }
 
+/**
+ * Store index number combinations to trigger a win 
+ * then iterate through a for loop to check for a match 
+ * of either "X" or "O"
+ */
 function checkForWin() {
+    const winningCombinations = [
+        [0, 1, 2],[3, 4, 5],[6, 7, 8], //row wins
+        [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
+        [0, 4, 8],[2, 4, 6]];//diagonal wins
+
+//Iterate through winning combinations
+    for (let i = 0; i < winningCombinations.length; i++) {
+        const [a, b, c] = winningCombinations[i];
+        if (cells[a].textContent === currentPlayer &&
+            cells[b].textContent === currentPlayer &&
+            cells[c].textContent === currentPlayer) {
+            return currentPlayer;
+        }
+    }
+    return null;
 }
 
 function incrementWins() {
