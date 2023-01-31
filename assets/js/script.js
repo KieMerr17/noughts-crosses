@@ -20,6 +20,7 @@ function newGame() {
             cell.textContent = "";
         }
     }
+    currentPlayer = "X"
 }
 
 // Cell event listener
@@ -37,6 +38,7 @@ function inputPlayerSymbol(event) {
     if (winner) {
         setTimeout(function() {
             alert(`${winner} wins!`)
+            currentPlayer = "X"
             newGame();
         }, 100);
         if (winner === "X") {
