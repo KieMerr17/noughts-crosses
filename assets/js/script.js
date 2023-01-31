@@ -36,6 +36,7 @@ function inputPlayerSymbol(event) {
     const winner = checkForWin();
     if (winner) {
         alert(`${winner} wins!`);
+        newGame()
         return;
     }
 //switch player symbol after checking for win
