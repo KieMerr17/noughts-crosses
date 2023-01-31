@@ -29,8 +29,11 @@ cells.forEach(cell => cell.addEventListener("click", inputPlayerSymbol));
  * then continue on to switch player symbol
  */
 function inputPlayerSymbol(event) {
+    if (event.target.textContent !== "") {
+        return;
+      }
     event.target.textContent = currentPlayer;
-    let winner = checkForWin();
+    const winner = checkForWin();
     if (winner) {
         alert(`${winner} wins!`);
         return;
