@@ -7,7 +7,7 @@ let computer = "O";
 
 document.addEventListener("DOMContentLoaded", function() {
 }) 
-newGame()
+newGame();
 
 
 /**
@@ -20,7 +20,7 @@ function newGame() {
             cell.textContent = "";
         }
     }
-    currentPlayer = "X"
+    currentPlayer = "X"; //set he symbol to "X"
 }
 
 // Cell event listener
@@ -37,14 +37,14 @@ function inputPlayerSymbol(event) {
     const winner = checkForWin();
     if (winner) {
         setTimeout(function() {
-            alert(`${winner} wins!`)
-            currentPlayer = "X"
+            alert(`${winner} wins!`);
+            currentPlayer = "X"; // set symbol to "X"
             newGame();
         }, 100);
         if (winner === "X") {
-            incrementWins()
+            incrementWins();
         } else if (winner === "O") {
-            incrementLosses()
+            incrementLosses();
         }
         
         return;
@@ -76,18 +76,27 @@ function checkForWin() {
     return null;
 }
 
+/**
+ * Increases score for the 'games won' section
+ */
 function incrementWins() {
     let winScore = parseInt(document.getElementById("games-won").innerText);
 	document.getElementById("games-won").innerText = ++winScore;
 }
 
+/**
+ * Increases score for the 'games lost' section
+ */
 function incrementLosses() {
     let lossScore = parseInt(document.getElementById("games-lost").innerText);
 	document.getElementById("games-lost").innerText = ++lossScore;
 }
 
+/**
+ * Clears all scores and board to empty
+ */
 function resetGame() {
-    newGame()
-    document.getElementById("games-won").innerText = "0"
-    document.getElementById("games-lost").innerText = "0"
+    newGame();
+    document.getElementById("games-won").innerText = "0";
+    document.getElementById("games-lost").innerText = "0";
 }
