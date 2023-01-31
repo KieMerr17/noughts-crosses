@@ -55,18 +55,28 @@ li {
     line-height: 1.8rem;
 }
 
-#reset-button {
-    background-color: #54494b;
+#reset {
+    background-color: #b33951;
+    color: #f1f7ed;
+}
+
+button {
     border: none;
     border-radius: 10px;
-    color: #f1f7ed;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 0 20px;
 }
 
-#reset-button:hover {
-    border-radius: 20px;
+button:hover {
+    font-size: 17px;
+    padding: 8px 16px;
+}
+
+#clear {
+    background-color: #e3d081;
+    color: #54494b;
 }
