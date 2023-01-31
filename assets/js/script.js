@@ -80,3 +80,9 @@ function incrementLosses() {
     let lossScore = parseInt(document.getElementById("games-lost").innerText);
 	document.getElementById("games-lost").innerText = ++lossScore;
 }
+
+function resetGame() {
+    newGame()
+    document.getElementById("games-won").innerText = "0"
+    document.getElementById("games-lost").innerText = "0"
+}
