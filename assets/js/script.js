@@ -31,12 +31,15 @@ cells.forEach(cell => cell.addEventListener("click", inputPlayerSymbol));
 function inputPlayerSymbol(event) {
     if (event.target.textContent !== "") {
         return;
-      }
+    }
     event.target.textContent = currentPlayer;
     const winner = checkForWin();
     if (winner) {
         alert(`${winner} wins!`);
         newGame()
+        if (winner === "X") {
+            incrementWins()
+        }
         return;
     }
 //switch player symbol after checking for win
@@ -67,6 +70,8 @@ function checkForWin() {
 }
 
 function incrementWins() {
+    let winScore = parseInt(document.getElementById("games-won").innerText);
+	document.getElementById("games-won").innerText = ++winScore;
 }
 
 function incrementLosses() {
