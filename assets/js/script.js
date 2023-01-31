@@ -39,6 +39,8 @@ function inputPlayerSymbol(event) {
         newGame()
         if (winner === "X") {
             incrementWins()
+        } else if (winner === "O") {
+            incrementLosses()
         }
         return;
     }
@@ -75,4 +77,6 @@ function incrementWins() {
 }
 
 function incrementLosses() {
+    let lossScore = parseInt(document.getElementById("games-lost").innerText);
+	document.getElementById("games-lost").innerText = ++lossScore;
 }
