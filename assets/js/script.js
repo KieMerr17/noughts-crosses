@@ -35,13 +35,16 @@ function inputPlayerSymbol(event) {
     event.target.textContent = currentPlayer;
     const winner = checkForWin();
     if (winner) {
-        alert(`${winner} wins!`);
-        newGame()
+        setTimeout(function() {
+            alert(`${winner} wins!`)
+            newGame();
+        }, 100);
         if (winner === "X") {
             incrementWins()
         } else if (winner === "O") {
             incrementLosses()
         }
+        
         return;
     }
 //switch player symbol after checking for win
