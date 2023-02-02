@@ -23,12 +23,14 @@ function newGame() {
 }
 
 // Cell event listener
-cells.forEach(cell => cell.addEventListener("click", inputPlayerSymbol));
+cells.forEach(cell => cell.addEventListener("click", inputSymbol));
 
 /**Input the symbol of the current player into the box and check for winner
- * then continue on to switch player symbol
+ * then continue on to switch player symbol.
+ * If symbol is Computer "O", computer continues to place symbol, before 
+ * checking again for a winner.
  */
-function inputPlayerSymbol(event) {
+function inputSymbol(event) {
     //check to make sure cell is empty
     if (event.target.textContent !== "") { 
         return;
@@ -59,7 +61,7 @@ function inputPlayerSymbol(event) {
         let randomIndex = Math.floor(Math.random() * emptyCells.length);
         
         emptyCells[randomIndex].textContent = computer;
-        currentPlayer = currentPlayer === "O" ? "X" : "O";
+        currentPlayer = currentPlayer === "O" ? "X" : "O"; //switch symbol back to player
         checkForWin() //check for win after computer plays
     }  
 }
