@@ -3,12 +3,11 @@
 
 const cells = document.querySelectorAll('td');
 let currentPlayer = "X"; // X Starts the game
-let computer = "O";
+let computer = "O"; //computer symbol
 
 document.addEventListener("DOMContentLoaded", function() {
 }) 
 newGame();
-
 
 /**
  * Function newGame() completely resets the board on loading the page,
@@ -30,28 +29,41 @@ cells.forEach(cell => cell.addEventListener("click", inputPlayerSymbol));
  * then continue on to switch player symbol
  */
 function inputPlayerSymbol(event) {
-    if (event.target.textContent !== "") {
+    //check to make sure cell is empty
+    if (event.target.textContent !== "") { 
         return;
     }
+
     event.target.textContent = currentPlayer;
     const winner = checkForWin();
     if (winner) {
         setTimeout(function() {
             alert(`${winner} wins!`);
-            currentPlayer = "X"; // set symbol to "X"
+            currentPlayer = "X"; // set symbol to "X" before starting new game
             newGame();
-        }, 100);
+        }, 500);
         if (winner === "X") {
             incrementWins();
         } else if (winner === "O") {
             incrementLosses();
         }
-        
         return;
     }
-//switch player symbol after checking for win
+
+    //switch player symbol after checking for win
     currentPlayer = currentPlayer === "O" ? "X" : "O";
+
+     // Computer turn if currentPlayer is "O"
+    if (currentPlayer === computer) {
+        let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
+        let randomIndex = Math.floor(Math.random() * emptyCells.length);
+        
+        emptyCells[randomIndex].textContent = computer;
+        currentPlayer = currentPlayer === "O" ? "X" : "O";
+        checkForWin() //check for win after computer plays
+    }  
 }
+
 
 /**
  * Store index number combinations to trigger a win 
@@ -73,7 +85,6 @@ function checkForWin() {
             return currentPlayer;
         }
     }
-    return null;
 }
 
 /**
