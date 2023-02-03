@@ -66,15 +66,14 @@
 1. As a first time user, I want to know what the page is about upon arrival
 2. As a first time user, I want to know the rules associated with Noughts and Crosses
 3. As a first time user, I want to know where i will be playing the game
-4. As a first time user, I want to know 
 #### Returning User
-5. As a retruning user, I want to be able to see my scores of games won vs games lost
-6. As a retruning user, I want to be able to reset my scores and clear all previous scores
+4. As a retruning user, I want to be able to see my scores of games won vs games lost
+5. As a retruning user, I want to be able to reset my scores and clear all previous scores
 
 #### Site Owner 
-7. As the site owner, I want users to feel challenged in their games
-8. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
-9. As the site owner, I want users to see if a page cannot be found, 404 page.
+6. As the site owner, I want users to feel challenged in their games
+7. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
+8. As the site owner, I want users to see if a page cannot be found, 404 page.
 
 ## Design
 
@@ -132,16 +131,19 @@ The page consists of one page with seven features
 
 ### Hommepage
 - This page is where the user will arrive.
+- User stories covered: 1, 7
 
 ![Homepage](docs/features/homepage.png)
 
 ### Header and Logo
 - Displayed to give reference to the user they have arrived at the correct page
+- User stories covered: 1
 
 ![Logo](docs/features/header-and-logo.png)
 
 ### Gameboard 
 - This is where the user will interact with the page and pay the game against the computer
+- User stories covered: 3, 6
 
 ![Gameboard](docs/features/game-area.png)
 
@@ -149,6 +151,7 @@ The page consists of one page with seven features
 - Use of these buttons will do either of the following:
   - 'NewGame' - If the board has no more available squares to play and no winner is acheived, this resets the board to a new game but keeps the current score total
   - 'Reset Scores' - If the user wants to switch person or start fresh themselves, this button will reset the scores and initiate a new game to start
+- User stories covered: 5
 
 ![Game Buttons](docs/features/game-buttons.png)
 
@@ -156,17 +159,20 @@ The page consists of one page with seven features
 - These boxes display the current total for games won vs games lost.
 - Games won score total will increase when the player "X" wins. 
 - Games lost score total will increase when the computer "O" wins
+- User stories covered: 4
 
 ![Scores](docs/features/scoring-area.png)
 
 ### Game Rules
 - Here the user can find a detailed list of game rules and how to play.
 - It informs the user that their symbol will be "X"
+- User stories covered: 2, 3
 
 ![Rules](docs/features/game-rules.png)
 
 ### 404 Page
 - Description...
+- User stories covered: 8
 
 ![404 Page](link)
 
@@ -218,7 +224,95 @@ The website was tested on the following browsers:
 
 ### Testing user stories
 
-1.
+1. 1. As a first time user, I want to know what the page is about upon arrival
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+2.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+3.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+4.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+5.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+6.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+7.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+8.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+9.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
