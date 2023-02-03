@@ -129,7 +129,7 @@ The website consists 1 page:
 ## Features
 The page consists of one page with seven features
 
-### Hommepage
+### Homepage
 - This page is where the user will arrive.
 - User stories covered: 1, 7
 
@@ -224,7 +224,85 @@ The website was tested on the following browsers:
 
 ### Testing user stories
 
-1. 1. As a first time user, I want to know what the page is about upon arrival
+1. As a first time user, I want to know what the page is about upon arrival
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Header and logo | Navigate to the homepage where you will find the header and logo | clear precise understanding of what the page is about | Works as expected|
+| Game Rules | Navigate to the home page and scroll to the bottom of the page to see a list of the rules about the game | Find a detailed list of the game rules | Worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+2. As a first time user, I want to know the rules associated with Noughts and Crosses
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Rules | Navigate to the home page and scroll to the bottom of the page to see a list of the rules about the game | Find a detailed list of the game rules | Worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+3. As a first time user, I want to know where i will be playing the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Gameboard | Navigate to the homepage and you will see a green gameboard presented for you to interact with the game | See a gameboard present for me to play the game | Worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+4. As a retruning user, I want to be able to see my scores of games won vs games lost
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Scores Area | Following a win or loss, scroll down the page to see the sections detailing scores total | See a running total of my games won and games lost totals | worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+5. As a retruning user, I want to be able to reset my scores and clear all previous scores
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Buttons | Scroll down the page to see the 'Reset Scores' button, click it. | The total for games won and for games lost should reset to '0' and a new game should be presented | Worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+6. As the site owner, I want users to feel challenged in their games
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Gameboard | Interact with the gameboard and see the computer responds to your input | When playing your symbol, the computer finds a empty square to place their symbol | Worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+7. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Homepage | Load the homepage and see a easy to understand landing screen| | |
+
+<details><summary>Screenshots</summary>
+<img src="">
+</details>
+<br>
+
+8. As the site owner, I want users to see if a page cannot be found, 404 page.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -234,96 +312,6 @@ The website was tested on the following browsers:
 <img src="">
 </details>
 <br>
-
-2.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-3.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-4.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-5.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-6.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-7.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-8.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-9.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| | | | |
-
-<details><summary>Screenshots</summary>
-<img src="">
-</details>
-<br>
-
-
 
 ## Bugs
 
