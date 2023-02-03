@@ -40,53 +40,67 @@
 ## Project Goals 
 
 ### User Goals
-- 
+- Be able to play a game of Noughts aand Crosses against a computer.
+- Be able to track scoring for games won vs games lost.
+- Be able to see clearly the rules associated to the game.
 
 ### Site Owner Goals
-- 
+- For the game to function with no issues.
+- Users to have a fun experience when playing.
+- Tracking of scores to be consistent.
+
 
 ## User Experience
 
 ### Target Audience
-- 
+- People of all ages looking to play a game of Noughts and Crosses against a computer opponent.
 
 ### User Requrements and Expectations
-- All links and functions to work as expected
+- All functions to work as expected
 - A fully responsive design across all screen sizes
 - A design which is appealing to the eye
 
 ## User Stories
 
 #### First-time User 
-1. 
-
+1. As a first time user, I want to know what the page is about upon arrival
+2. As a first time user, I want to know the rules associated with Noughts and Crosses
+3. As a first time user, I want to know where i will be playing the game
+4. As a first time user, I want to know 
 #### Returning User
-2. 
+5. As a retruning user, I want to be able to see my scores of games won vs games lost
+6. As a retruning user, I want to be able to reset my scores and clear all previous scores
 
 #### Site Owner 
-3. As the site owner, I want users to see if a page cannot be found, 404 page.
+7. As the site owner, I want users to feel challenged in their games
+8. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
+9. As the site owner, I want users to see if a page cannot be found, 404 page.
 
 ## Design
 
 ### Design Choices
-Description...
+The webpage was designed with a simplicity feel to give the user a quick and easy understanding of the page layout and where to play the game
 
 ### Colours
-Description...
+For the color scheme i used mellow colors to be easy on the eye with bold colors on on the buttons to represent the purpose of the button.
+(eg. red for warning)<br>
+The inspiration for the colors was taken from a image found on Google. <br>
+The colors chosen are displayed and coded into the files using basic '#' color coding
 <br>
 
-![Colour scheme](link)
+![Colour scheme](docs/features/color-palette.png)
 
 
 ### Fonts
-
+Montserrat was used across the page to match in with the smooth easy feel i was looking to acheive in the design period.
+Sans-serif was used as a back-up font should Montserrat not be available.
 
 ### Structure
-The page is structured in a..
+The page is structured in a user friendly, and easy to learn way. When arriving to the website the user sees a gameboard area in the center of the page, wit a fully detailed list of game rules beneath to describe how to play the game.
 
 
 The website consists 1 page: 
-- A Home Page with ...
+- A Home Page - This is where the user will engage in playing the game.
 
 ### Wireframes
 
@@ -109,19 +123,47 @@ The website consists 1 page:
 - Gitpod
 - Balsamiq
 - Google Fonts
-- Pintrest
-- Font Awsome
+- Google Images
 - Favicon<span>.</span>io
 - TinyPNG
-- Google embedded map
 
 ## Features
-The page consists of
+The page consists of one page with seven features
 
-### Homepage
-- Description...
+### Hommepage
+- This page is where the user will arrive.
 
-![Homepage](link)
+![Homepage](docs/features/homepage.png)
+
+### Header and Logo
+- Displayed to give reference to the user they have arrived at the correct page
+
+![Logo](docs/features/header-and-logo.png)
+
+### Gameboard 
+- This is where the user will interact with the page and pay the game against the computer
+
+![Gameboard](docs/features/game-area.png)
+
+### Game Buttons
+- Use of these buttons will do either of the following:
+  - 'NewGame' - If the board has no more available squares to play and no winner is acheived, this resets the board to a new game but keeps the current score total
+  - 'Reset Scores' - If the user wants to switch person or start fresh themselves, this button will reset the scores and initiate a new game to start
+
+![Game Buttons](docs/features/game-buttons.png)
+
+### Scores Area
+- These boxes display the current total for games won vs games lost.
+- Games won score total will increase when the player "X" wins. 
+- Games lost score total will increase when the computer "O" wins
+
+![Scores](docs/features/scoring-area.png)
+
+### Game Rules
+- Here the user can find a detailed list of game rules and how to play.
+- It informs the user that their symbol will be "X"
+
+![Rules](docs/features/game-rules.png)
 
 ### 404 Page
 - Description...
