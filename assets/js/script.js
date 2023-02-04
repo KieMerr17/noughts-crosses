@@ -61,9 +61,22 @@ function inputSymbol(event) {
         let randomIndex = Math.floor(Math.random() * emptyCells.length);
         
         emptyCells[randomIndex].textContent = computer;
+        const winner = checkForWin();
+        if (winner) {
+            setTimeout(function() {
+                alert(`${winner} wins!`);
+                currentPlayer = "X"; // set symbol to "X" before starting new game
+                newGame();
+            }, 500);
+            if (winner === "X") {
+                incrementWins();
+            } else if (winner === "O") {
+                incrementLosses();
+            }
+            return;
+        }
         currentPlayer = currentPlayer === "O" ? "X" : "O"; //switch symbol back to player
-        checkForWin() //check for win after computer plays
-    }  
+    }
 }
 
 
