@@ -27,8 +27,8 @@ cells.forEach(cell => cell.addEventListener("click", inputSymbol));
 
 /**Input the symbol of the current player into the box and check for winner
  * then continue on to switch player symbol.
- * If symbol is Computer "O", computer continues to place symbol, before 
- * checking again for a winner.
+ * If symbol is Computer "O", computer first checks for a blocking move
+ * before continues to place symbol itself, then checks for its own win.
  */
 function inputSymbol(event) {
     //check to make sure cell is empty
@@ -57,10 +57,7 @@ function inputSymbol(event) {
 
      // Computer turn if currentPlayer is "O"
     if (currentPlayer === computer) {
-        let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
-        let randomIndex = Math.floor(Math.random() * emptyCells.length);
-        
-        emptyCells[randomIndex].textContent = computer;
+        computerBlockCheck(); //Check to block players win
         const winner = checkForWin();
         if (winner) {
             setTimeout(function() {
@@ -79,7 +76,6 @@ function inputSymbol(event) {
     }
 }
 
-
 /**
  * Store index number combinations to trigger a win 
  * then iterate through a for loop to check for a match 
@@ -91,7 +87,7 @@ function checkForWin() {
         [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
         [0, 4, 8],[2, 4, 6]];//diagonal wins
 
-//Iterate through winning combinations
+    //Iterate through winning combinations
     for (let i = 0; i < winningCombinations.length; i++) {
         const [a, b, c] = winningCombinations[i];
         if (cells[a].textContent === currentPlayer &&
@@ -100,6 +96,45 @@ function checkForWin() {
             return currentPlayer;
         }
     }
+}
+
+/**
+ * Computer iterates through empty cells available in winning 
+ * combinations, if player "X" could win on their next move, computer 
+ * plays symbol in the empty cell available
+*/
+function computerBlockCheck() {
+    const winningCombinations = [
+        [0, 1, 2],[3, 4, 5],[6, 7, 8], //row wins
+        [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
+        [0, 4, 8],[2, 4, 6]];//diagonal wins
+
+    // Block the player's win if they have two symbols in a row
+    for (let i = 0; i < winningCombinations.length; i++) {
+        const [a, b, c] = winningCombinations[i];
+        if (cells[a].textContent === "X" &&
+            cells[b].textContent === "X" &&
+            cells[c].textContent === "") {
+                cells[c].textContent = computer;
+                return;
+        }
+        if (cells[a].textContent === "X" &&
+            cells[c].textContent === "X" &&
+            cells[b].textContent === "") {
+                cells[b].textContent = computer;
+                return;
+        }
+        if (cells[b].textContent === "X" &&
+            cells[c].textContent === "X" &&
+            cells[a].textContent === "") {
+                cells[a].textContent = computer;
+                return;
+        }
+    }
+    // Place the symbol in an empty cell
+    let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
+    let randomCell = Math.floor(Math.random() * emptyCells.length);
+    emptyCells[randomCell].textContent = computer;
 }
 
 /**
