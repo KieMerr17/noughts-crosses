@@ -43,7 +43,7 @@ function inputSymbol(event) {
             alert(`${winner} wins!`);
             currentPlayer = "X"; // set symbol to "X" before starting new game
             newGame();
-        }, 500);
+        }, 300);
         if (winner === "X") {
             incrementWins();
         } else if (winner === "O") {
@@ -65,7 +65,7 @@ function inputSymbol(event) {
                     alert(`${winner} wins!`);
                     currentPlayer = "X"; // set symbol to "X" before starting new game
                     newGame();
-                }, 500);
+                }, 300);
                 if (winner === "X") {
                     incrementWins();
                 } else if (winner === "O") {
@@ -142,7 +142,7 @@ function computerBlockCheck() {
             alert(`Its a Draw!`);
             currentPlayer = "X"; // set symbol to "X" before starting new game
             newGame();
-        }, 500);
+        }, 300);
     } else if (emptyCells => 1) {
         // Place the symbol in an empty cell
         emptyCells[randomCell].textContent = computer;
