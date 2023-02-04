@@ -133,10 +133,20 @@ function computerBlockCheck() {
                 return;
         }
     }
-    // Place the symbol in an empty cell
+    
     let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
     let randomCell = Math.floor(Math.random() * emptyCells.length);
-    emptyCells[randomCell].textContent = computer;
+    // Checks if any empty cells are left to play in
+    if (emptyCells <= 0) {
+        setTimeout(function() {
+            alert(`Its a Draw!`);
+            currentPlayer = "X"; // set symbol to "X" before starting new game
+            newGame();
+        }, 500);
+    } else if (emptyCells => 1) {
+        // Place the symbol in an empty cell
+        emptyCells[randomCell].textContent = computer;
+    }
 }
 
 /**
