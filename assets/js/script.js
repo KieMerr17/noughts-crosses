@@ -57,22 +57,24 @@ function inputSymbol(event) {
 
      // Computer turn if currentPlayer is "O"
     if (currentPlayer === computer) {
-        computerBlockCheck(); //Check to block players win
-        const winner = checkForWin();
-        if (winner) {
-            setTimeout(function() {
-                alert(`${winner} wins!`);
-                currentPlayer = "X"; // set symbol to "X" before starting new game
-                newGame();
-            }, 500);
-            if (winner === "X") {
-                incrementWins();
-            } else if (winner === "O") {
-                incrementLosses();
+        setTimeout(function() {
+            computerBlockCheck(); //Check to block players win
+            const winner = checkForWin();
+            if (winner) {
+                setTimeout(function() {
+                    alert(`${winner} wins!`);
+                    currentPlayer = "X"; // set symbol to "X" before starting new game
+                    newGame();
+                }, 500);
+                if (winner === "X") {
+                    incrementWins();
+                } else if (winner === "O") {
+                    incrementLosses();
+                }
+                return;
             }
-            return;
-        }
-        currentPlayer = currentPlayer === "O" ? "X" : "O"; //switch symbol back to player
+            currentPlayer = currentPlayer === "O" ? "X" : "O"; //switch symbol back to player
+        }, 300);
     }
 }
 
