@@ -1,9 +1,9 @@
 # Noughts and Crosses
 (Developer: Kieran Merrett)
 
-![Mockup image](link)
+![Mockup image](docs/amiresponsive.png)
 
-[Live webpage](link)
+[Live webpage](https://kiemerr17.github.io/noughts-crosses/)
 
 ## Table of Content
 
