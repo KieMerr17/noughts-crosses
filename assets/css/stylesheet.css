@@ -83,3 +83,12 @@ button:hover {
     background-color: #b33951;
     color: #f1f7ed;
 }
+
+/* Media queries for small screens 445px and smaller */
+@media screen and (max-width: 445px){
+    td {
+        font-size: 60px;
+        height: 80px;
+        width: 80px;
+    }
+}
