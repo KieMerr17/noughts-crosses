@@ -37,7 +37,7 @@ function inputSymbol(event) {
     }
 
     event.target.textContent = currentPlayer;
-    const winner = checkForWin();
+    const winner = win();
     if (winner) {
         setTimeout(function() {
             alert(`${winner} wins!`);
@@ -58,8 +58,8 @@ function inputSymbol(event) {
      // Computer turn if currentPlayer is "O"
     if (currentPlayer === computer) {
         setTimeout(function() {
-            computerBlockCheck(); //Check to block players win
-            const winner = checkForWin();
+            computersTurn(); //Check to block players win
+            const winner = win();
             if (winner) {
                 setTimeout(function() {
                     alert(`${winner} wins!`);
@@ -83,7 +83,7 @@ function inputSymbol(event) {
  * then iterate through a for loop to check for a match 
  * of either "X" or "O"
  */
-function checkForWin() {
+function win() {
     const winningCombinations = [
         [0, 1, 2],[3, 4, 5],[6, 7, 8], //row wins
         [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
@@ -105,7 +105,9 @@ function checkForWin() {
  * combinations, if player "X" could win on their next move, computer 
  * plays symbol in the empty cell available
 */
-function computerBlockCheck() {
+function computersTurn() {
+    let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
+    let randomCell = Math.floor(Math.random() * emptyCells.length);
     const winningCombinations = [
         [0, 1, 2],[3, 4, 5],[6, 7, 8], //row wins
         [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
@@ -134,15 +136,13 @@ function computerBlockCheck() {
         }
     }
     
-    let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
-    let randomCell = Math.floor(Math.random() * emptyCells.length);
     // Checks if any empty cells are left to play in
     if (emptyCells <= 0) {
         setTimeout(function() {
             alert(`Its a Draw!`);
             currentPlayer = "X"; // set symbol to "X" before starting new game
             newGame();
-        }, 300);
+        }, 100);
     } else if (emptyCells => 1) {
         // Place the symbol in an empty cell
         emptyCells[randomCell].textContent = computer;
