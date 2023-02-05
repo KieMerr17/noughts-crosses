@@ -6,7 +6,7 @@ let currentPlayer = "X"; // X Starts the game
 let computer = "O"; //computer symbol
 
 document.addEventListener("DOMContentLoaded", function() {
-}) 
+});
 newGame();
 
 /**
@@ -102,8 +102,10 @@ function win() {
 
 /**
  * Computer iterates through empty cells available in winning 
- * combinations, if player "X" could win on their next move, computer 
- * plays symbol in the empty cell available
+ * combinations, first it checks if it could win itself, 
+ * then if player "X" could win on their next move, computer 
+ * plays a symbol to block the win. If neither, computer plays
+ * in empty
 */
 function computersTurn() {
     let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
@@ -112,6 +114,29 @@ function computersTurn() {
         [0, 1, 2],[3, 4, 5],[6, 7, 8], //row wins
         [0, 3, 6],[1, 4, 7],[2, 5, 8], //column wins
         [0, 4, 8],[2, 4, 6]];//diagonal wins
+
+    // Computer first checks for its own winning move
+    for (let i = 0; i < winningCombinations.length; i++) {
+        const [a, b, c] = winningCombinations[i];
+        if (cells[a].textContent === "O" &&
+            cells[b].textContent === "O" &&
+            cells[c].textContent === "") {
+                cells[c].textContent = computer;
+                return;
+        }
+        if (cells[a].textContent === "O" &&
+            cells[c].textContent === "O" &&
+            cells[b].textContent === "") {
+                cells[b].textContent = computer;
+                return;
+        }
+        if (cells[b].textContent === "O" &&
+            cells[c].textContent === "O" &&
+            cells[a].textContent === "") {
+                cells[a].textContent = computer;
+                return;
+        }
+    }
 
     // Block the player's win if they have two symbols in a row
     for (let i = 0; i < winningCombinations.length; i++) {
