@@ -8,11 +8,12 @@ body {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    table-layout: fixed;
 }
 
 td {
     color: #b33951;
-    font-size: 60px;
+    font-size: 80px;
     background-color: #91c7b1;
     border: 2px solid black;
     height: 140px;
