@@ -192,6 +192,28 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 </details>
 <br>
 
+### JavaScript Validation
+The JSHint website was used to validate the JavaScript of the website.<br>
+It passed with no errors and the following warning raised:
+
+"One unused variable: 196 resetGame"
+
+This is the function 'resetGame()'<br>
+It is used in the index.html file and is referenced on the 'reset scores' button. See attached screenshot.
+<details><summary>JavaScript Validation</summary>
+<img src="docs/validation/javascript-validation.png">
+</details>
+<br> 
+It passed with the following issue raised:<br>
+"One unused variable: 196 resetGame"
+
+This is the function 'resetGame()'<br>
+It is used in the index.html file and is referenced to a on-click attribute linked to the 'reset scores' button. See attached screenshot.
+<details><summary>resetGame() reference image</summary>
+<img src="docs/validation/resetGame()-reference.png">
+</details>
+<br>
+
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors. The alerts on the pages are due to Home Page link being near the Link to the homepage through the logo being in close proximity of one another.
 
