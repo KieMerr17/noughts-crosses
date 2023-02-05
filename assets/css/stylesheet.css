@@ -26,6 +26,8 @@ td {
 }
 
 .scores {
+    color: #000;
+    background-color: #fff;
     font-size: 1.1rem;
     font-weight: 480;
     border: 1px solid black;
