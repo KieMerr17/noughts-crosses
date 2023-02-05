@@ -180,7 +180,7 @@ The page consists of one page with seven features
 
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
-<details><summary>index.html</summary>
+<details><summary>Home Page</summary>
 <img src="docs/validation/index-validation.png">
 </details>
 <br>
@@ -196,15 +196,15 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors. The alerts on the pages are due to Home Page link being near the Link to the homepage through the logo being in close proximity of one another.
 
 <details><summary>Home Page</summary>
-<img src="">
+<img src="docs/validation/index-wave.png">
 </details>
 <br>
 
 ### Performance 
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
 
-<details><summary>index.html</summary>
-<img src="">
+<details><summary>Home Page</summary>
+<img src="docs/validation/index-lighthouse.png">
 </details>
 
 <br>
