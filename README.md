@@ -249,7 +249,7 @@ The website was tested on the following browsers:
 | Game Rules | Navigate to the home page and scroll to the bottom of the page to see a list of the rules about the game | Find a detailed list of the game rules | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-1.png">
 </details>
 <br>
 
@@ -260,7 +260,7 @@ The website was tested on the following browsers:
 | Game Rules | Navigate to the home page and scroll to the bottom of the page to see a list of the rules about the game | Find a detailed list of the game rules | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-2.png">
 </details>
 <br>
 
@@ -271,7 +271,7 @@ The website was tested on the following browsers:
 | Gameboard | Navigate to the homepage and you will see a green gameboard presented for you to interact with the game | See a gameboard present for me to play the game | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-3.png">
 </details>
 <br>
 
@@ -282,7 +282,7 @@ The website was tested on the following browsers:
 | Scores Area | Following a win or loss, scroll down the page to see the sections detailing scores total | See a running total of my games won and games lost totals | worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-4.png">
 </details>
 <br>
 
@@ -293,7 +293,7 @@ The website was tested on the following browsers:
 | Game Buttons | Scroll down the page to see the 'Reset Scores' button, click it. | The total for games won and for games lost should reset to '0' and a new game should be presented | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-5.png">
 </details>
 <br>
 
@@ -304,7 +304,7 @@ The website was tested on the following browsers:
 | Gameboard | Interact with the gameboard and see the computer responds to your input | When playing your symbol, the computer finds a empty square to place their symbol | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-6.png">
 </details>
 <br>
 
@@ -315,7 +315,7 @@ The website was tested on the following browsers:
 | Homepage | Load the homepage and see a easy to understand landing screen| | |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-7.png">
 </details>
 <br>
 
