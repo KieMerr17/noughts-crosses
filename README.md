@@ -104,7 +104,7 @@ The website consists 1 page:
 ### Wireframes
 
 <details><summary>Home Page</summary>
-<img src="">
+<img src="docs/wireframes/homepage-wireframe.png">
 </details>
 <details><summary>404</summary>
 <img src="">
@@ -198,17 +198,12 @@ It passed with no errors and the following warning raised:
 
 "One unused variable: 196 resetGame"
 
-This is the function 'resetGame()'<br>
-It is used in the index.html file and is referenced on the 'reset scores' button. See attached screenshot.
 <details><summary>JavaScript Validation</summary>
 <img src="docs/validation/javascript-validation.png">
 </details>
 <br> 
-It passed with the following issue raised:<br>
-"One unused variable: 196 resetGame"
-
-This is the function 'resetGame()'<br>
-It is used in the index.html file and is referenced to a on-click attribute linked to the 'reset scores' button. See attached screenshot.
+This warning is the function 'resetGame()'<br>
+It is used in the index.html file and is linked to a on-click attribute attached to the 'reset scores' button. See attached screenshot.
 <details><summary>resetGame() reference image</summary>
 <img src="docs/validation/resetGame()-reference.png">
 </details>
