@@ -201,9 +201,8 @@ It passed with no errors and the following warning raised:
 <details><summary>JavaScript Validation</summary>
 <img src="docs/validation/javascript-validation.png">
 </details>
-<br> 
-This warning is the function 'resetGame()'<br>
-It is used in the index.html file and is linked to a on-click attribute attached to the 'reset scores' button. See attached screenshot.
+** This warning is the function 'resetGame()'<br>
+It is used in the index.html file and is linked to a on-click attribute attached to the 'reset scores' button. <br> See attached screenshot.
 <details><summary>resetGame() reference image</summary>
 <img src="docs/validation/resetGame()-reference.png">
 </details>
