@@ -4,7 +4,7 @@ body {
     font-size: 1rem;
     background-color: #f1f7ed;
 }
-
+/* Game area */
 table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -20,6 +20,7 @@ td {
     width: 140px;
 }
 
+/* Scores */
 #scores-area {
     text-align: center;
     display: inline-block;
@@ -35,6 +36,7 @@ td {
     padding: 5px;
 }
 
+/* Win and loss totals */
 #games-won {
     color: green;
 }
@@ -43,6 +45,7 @@ td {
     color: black;
 }
 
+/* Game rules */
 #game-rules-area {
     text-align: center;
 }
@@ -56,6 +59,7 @@ li {
     line-height: 1.8rem;
 }
 
+/* New Game and Clear Scores buttons */
 button {
     width: 150px;
     border: none;
@@ -85,11 +89,56 @@ button:hover {
     color: #f1f7ed;
 }
 
+/* Form Information */
+#feedback-button {
+    background: #54494b;
+    color: #fff;
+    width: 220px;
+}
+
+#form-outer {
+    width: 100%;
+    text-align: center;
+}
+
+#form-inner {
+    border: 1px dashed #54494b;
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+form {
+    width: 100%;
+    display: ;
+}
+
+form input {
+    width: 60%;
+    max-width: 300px;
+}
+
+#feedback-text-area {
+    width: 60%;
+    max-width: 400px;
+    height: 200px;
+}
+
+#submit-feedback {
+    width: fit-content;
+}
+
 /* Media queries for small screens 445px and smaller */
 @media screen and (max-width: 445px){
     td {
         font-size: 60px;
         height: 80px;
         width: 80px;
+    }
+
+    form input, #feedback-text-area {
+        width: 90%;
+        max-width: 300px;
     }
 }
