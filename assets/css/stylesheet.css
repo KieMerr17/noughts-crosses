@@ -97,6 +97,7 @@ button:hover {
 }
 
 #form-outer {
+    display: none;
     width: 100%;
     text-align: center;
 }
@@ -111,7 +112,6 @@ button:hover {
 
 form {
     width: 100%;
-    display: ;
 }
 
 form input {

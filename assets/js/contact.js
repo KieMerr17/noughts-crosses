@@ -1,3 +1,14 @@
+//Feedback form is hidden until the 'feedback button' is clicked
+const formOuter = document.getElementById("form-outer");
+const feedbackButton = document.getElementById("feedback-button");
+
+formOuter.style.display = "none";
+//click event listener for feedback button
+feedbackButton.addEventListener("click", function () {
+  formOuter.style.display = "block";
+});
+
+
 /**
  * When clicking submit on the feedback form, this function gets the inputed information
  * and sends the form to emailjs.
