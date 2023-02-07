@@ -103,7 +103,6 @@ button:hover {
 }
 
 #form-inner {
-    border: 1px dashed #54494b;
     width: 80%;
     display: inline-block;
     margin-top: 20px;
@@ -121,7 +120,7 @@ form input {
 
 #feedback-text-area {
     width: 60%;
-    max-width: 400px;
+    max-width: 700px;
     height: 200px;
 }
 

@@ -6,6 +6,7 @@ formOuter.style.display = "none";
 //click event listener for feedback button
 feedbackButton.addEventListener("click", function () {
   formOuter.style.display = "block";
+  formOuter.scrollIntoView({ behavior: 'smooth' });
 });
 
 
