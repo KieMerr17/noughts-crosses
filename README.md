@@ -202,7 +202,10 @@ The page consists of one page with 9 features
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
 <details><summary>Home Page</summary>
-<img src="docs/validation/index-validation.png">
+<img src="docs/validation/index-html-validation.png">
+</details>
+<details><summary>404 Page</summary>
+<img src="docs/validation/404-html-validation.png">
 </details>
 <br>
 
