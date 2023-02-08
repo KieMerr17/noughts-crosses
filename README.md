@@ -70,11 +70,12 @@
 #### Returning User
 4. As a retruning user, I want to be able to see my scores of games won vs games lost
 5. As a retruning user, I want to be able to reset my scores and clear all previous scores
+6. As a retruning user, I want to be able to leave feedback of my experience
 
 #### Site Owner 
-6. As the site owner, I want users to feel challenged in their games
-7. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
-8. As the site owner, I want users to see if a page cannot be found, 404 page.
+7. As the site owner, I want users to feel challenged in their games
+8. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
+9. As the site owner, I want users to see if a page cannot be found, 404 page.
 
 ## Design
 
@@ -99,8 +100,9 @@ Sans-serif was used as a back-up font should Montserrat not be available.
 The page is structured in a user friendly, and easy to learn way. When arriving to the website the user sees a gameboard area in the center of the page, wit a fully detailed list of game rules beneath to describe how to play the game.
 
 
-The website consists 1 page: 
+The website consists 2 pages: 
 - A Home Page - This is where the user will engage in playing the game.
+- A 404 Page to show the user when an error has occurred 
 
 ### Wireframes
 
@@ -110,6 +112,7 @@ The website consists 1 page:
 <details><summary>404</summary>
 <img src="docs/wireframes/404-wireframe.png">
 </details>
+<br>
 
 ## Technologies Used
 
@@ -122,17 +125,18 @@ The website consists 1 page:
 - GitHub
 - Gitpod
 - Balsamiq
+- JSHint
 - Google Fonts
 - Google Images
 - Favicon<span>.</span>io
 - TinyPNG
 
 ## Features
-The page consists of one page with seven features
+The page consists of one page with 9 features
 
 ### Homepage
 - This page is where the user will arrive.
-- User stories covered: 1, 7
+- User stories covered: 1, 8
 
 ![Homepage](docs/features/homepage.png)
 
@@ -144,9 +148,18 @@ The page consists of one page with seven features
 
 ### Gameboard 
 - This is where the user will interact with the page and pay the game against the computer
-- User stories covered: 3, 6
+- User stories covered: 3, 7
 
 ![Gameboard](docs/features/game-area.png)
+
+### Board Colors
+- This gives the user the chance to change the game board and symbol combinations
+- There are 3 choices: 
+  - Green/Red
+  - Orange/Black
+  - Grey/White
+
+![Board Colours](docs/features/board-colour-button-2.png)
 
 ### Game Buttons
 - Use of these buttons will do either of the following:
@@ -171,11 +184,18 @@ The page consists of one page with seven features
 
 ![Rules](docs/features/game-rules.png)
 
+### Feedback Form
+- This form is hidden until 'Give us feedback@ button is clicked.
+- Then a form appears for the user to enter their name, email and feedback comments.
+- User Stories Covered: 6
+
+![Feedback Form](docs/features/feedback-section.png)
+
 ### 404 Page
 - Description...
-- User stories covered: 8
+- User stories covered: 9
 
-![404 Page](link)
+![404 Page](docs/features/404-page.png)
 
 ## Validation
 
