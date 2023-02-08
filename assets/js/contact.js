@@ -17,6 +17,7 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
     /**Uses the values from the emailJS form template to send the email through emailJS
      * Following sending of the form, alerts displayed dependant on outcome. 
      **/
+    /* global emailjs */
     emailjs.sendForm('contact_service', 'contact_form', this).then(function() {
         console.log('SUCCESS!');
         formOuter.style.display = "none";
