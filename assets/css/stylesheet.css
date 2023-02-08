@@ -163,6 +163,26 @@ form input {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+/* 404 page */
+.text-box-404 {
+    background: #54494b;
+    color: #fff;
+    margin: 10% 20% 0 20%;
+    padding: 20px;
+}
+
+#page-404-header {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+}
+
+#page-404-text {
+    margin: 0 20%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
 
 /* Media queries for small screens 445px and smaller */
 @media screen and (max-width: 445px){
