@@ -232,10 +232,15 @@ The JSHint website was used to validate the JavaScript of the website. Tested al
 
 
 ### Accessibility
-The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors. The alerts on the pages are due to Home Page link being near the Link to the homepage through the logo being in close proximity of one another.
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.<br>The alert on the Home Page is detailed as the following
+
+- Alert: Layout table<br> What It Means:- A layout table is present.
 
 <details><summary>Home Page</summary>
 <img src="docs/validation/index-wave.png">
+</details>
+<details><summary>404 Page</summary>
+<img src="docs/validation/404-wave.png">
 </details>
 <br>
 
@@ -245,7 +250,9 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <details><summary>Home Page</summary>
 <img src="docs/validation/index-lighthouse.png">
 </details>
-
+<details><summary>404 Page</summary>
+<img src="docs/validation/404-lighthouse.png">
+</details>
 <br>
 
 ### Performing tests on various devices 
