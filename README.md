@@ -108,7 +108,7 @@ The website consists 1 page:
 <img src="docs/wireframes/homepage-wireframe.png">
 </details>
 <details><summary>404</summary>
-<img src="">
+<img src="docs/wireframes/404-wireframe.png">
 </details>
 
 ## Technologies Used
