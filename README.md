@@ -326,36 +326,50 @@ The website was tested on the following browsers:
 </details>
 <br>
 
-6. As the site owner, I want users to feel challenged in their games
+6. As a retruning user, I want to be able to leave feedback of my experience
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Gameboard | Interact with the gameboard and see the computer responds to your input | When playing your symbol, the computer finds a empty square to place their symbol | Worked as expected |
+| Feedback Button | Scroll down the page until you see the 'Give Us Feedback' Button. | A feedback form will appear below the button, the focus be drawn to the feedback and you can submit your comments. | Worked as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-testing-stories/user-story-6.png">
+<img src="docs/user-testing-stories/user-story-6-1.png">
+<img src="docs/user-testing-stories/user-story-6-2.png">
+<img src="docs/user-testing-stories/user-story-6-3.png">
 </details>
 <br>
 
-7. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
+7. As the site owner, I want users to feel challenged in their games
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Homepage | Load the homepage and see a easy to understand landing screen| | |
+| Gameboard | Interact with the gameboard and see the computer responds to your input | When playing your symbols, the computer will attempt to block your win | Worked as expected |
 
 <details><summary>Screenshots</summary>
 <img src="docs/user-testing-stories/user-story-7.png">
 </details>
 <br>
 
-8. As the site owner, I want users to see if a page cannot be found, 404 page.
+8. As the site owner, I want users to have a full understanding of the layout of the page and where to play the game
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Homepage | Load the homepage and see a easy to understand landing screen| Clear obvious sections defining what the game is about and the rules on how to play | worked as expected|
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-testing-stories/user-story-8.png">
+</details>
+<br>
+
+9. As the site owner, I want users to see if a page cannot be found, 404 page.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 Page | input the number 1 following the website address to cause a error | 404.html page to launch displaying an error | worked as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-testing-stories/user-story-9-1.png">
+<img src="docs/user-testing-stories/user-story-9-2.png">
 </details>
 <br>
 
