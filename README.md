@@ -377,8 +377,9 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| | |
-| | |
+| Ability to change a computers symbol if you clicked it | Adjusted game.js file so that you cannot change the text content of a cell which has already been played in |
+| Once a win is detected, the alert is displayed before the symbol is placed in the box | added a time delay function to game.js to delay the alert so the symbol can be seen in the box |
+| When starting a new game, the symbol is always opposite from winning symbol and should be player "X" | Added function to game.js so once a win takes place, on starting a new game, player "X" starts the game |
 
 
 
