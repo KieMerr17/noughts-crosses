@@ -193,6 +193,10 @@ function incrementLosses() {
 /**
  * Clears all scores and board to empty
  */
+let resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", function () {
+resetGame();
+});
 function resetGame() {
     newGame();
     document.getElementById("games-won").innerText = "0";

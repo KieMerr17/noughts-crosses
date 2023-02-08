@@ -13,7 +13,7 @@ feedbackButton.addEventListener("click", function () {
 document.getElementById('feedback-form').addEventListener('submit', function(event) {
     event.preventDefault();
     // generate a five digit number for the contact_number variable
-    this.contact_number.value = Math.random() * 100000 | 0;
+    this.contact_number.value = Math.random() * 100000;
     /**Uses the values from the emailJS form template to send the email through emailJS
      * Following sending of the form, alerts displayed dependant on outcome. 
      **/
