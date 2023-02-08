@@ -405,9 +405,9 @@ You can clone the repository by following these steps:
 
 ## Credits
 
-### Media
-  
 ### Code
+I sampled the basic code structure from the 'Love Maths' walkthrough project for the scoring element of the game. 
+I adjusted where needed in order for it to acheive what i was looking for.
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
