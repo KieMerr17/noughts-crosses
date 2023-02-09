@@ -3,6 +3,11 @@ const feedbackButton = document.getElementById("feedback-button");
 
 formOuter.style.display = "none";
 
+(function() {
+    //https://dashboard.emailjs.com/admin/account
+    emailjs.init('XWk8_NsujiDSac5Nk');
+})();
+
 //click event listener for feedback button
 feedbackButton.addEventListener("click", function () {
     formOuter.style.display = "block";
