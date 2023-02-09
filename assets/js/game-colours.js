@@ -5,6 +5,7 @@ const greyBoard = document.getElementById("grey-board");
 const gameSquares = document.querySelectorAll("td");
 
 // Event listeners for anchor elements in colour drop down menu
+// Gameboard colour Green/Red
 greenBoard.addEventListener("click", function () {
     gameSquares.forEach(gameSquare => {
         gameSquare.style.backgroundColor = "#91c7b1";
@@ -12,6 +13,7 @@ greenBoard.addEventListener("click", function () {
     });
 });
 
+// Gameboard colour Orange/Black
 orangeBoard.addEventListener("click", function () {
     gameSquares.forEach(gameSquare => {
         gameSquare.style.backgroundColor = "#FF7F00";
@@ -19,6 +21,7 @@ orangeBoard.addEventListener("click", function () {
     });
 });
 
+// Gameboard colour Grey/White
 greyBoard.addEventListener("click", function () {
     gameSquares.forEach(gameSquare => {
         gameSquare.style.backgroundColor = "#778899";
