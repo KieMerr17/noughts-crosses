@@ -22,39 +22,39 @@
         <h1 id="header">Noughts & Crosses</h1>
     </header>
     <div class="dropdown">
-        <button class="dropdown-button">Board Colour</button>
+        <button class="dropdown-button" aria-label="Change Board Colour">Board Colour</button>
         <div class="dropdown-content">
-            <p id="green-board">Green / Red</p>
-            <p id="orange-board">Orange / Black</p>
-            <p id="grey-board">Grey / White</p>
+            <p id="green-board" aria-label="Green Board with Red Symbols">Green / Red</p>
+            <p id="orange-board" aria-label="Orange Board with Black Symbols">Orange / Black</p>
+            <p id="grey-board" aria-label="Grey Board with White Symbols">Grey / White</p>
         </div>
     </div>
 
     <!-- Main Game Area -->
     <div>
-        <div id="main-game">
+        <div id="main-game" aria-label="Game Area">
             <table>
                 <tr>
-                    <td id="cell-1"></td>
-                    <td id="cell-2"></td>
-                    <td id="cell-3"></td>
+                    <td id="cell-1" aria-label="Top-Left Box"></td>
+                    <td id="cell-2" aria-label="Top-Center Box"></td>
+                    <td id="cell-3" aria-label="Top-Right Box"></td>
                 </tr>
                 <tr>
-                    <td id="cell-4"></td>
-                    <td id="cell-5"></td>
-                    <td id="cell-6"></td>
+                    <td id="cell-4" aria-label="Middle-Left Box"></td>
+                    <td id="cell-5" aria-label="Middle-Center Box"></td>
+                    <td id="cell-6" aria-label="Middle-Right Box"></td>
                 </tr>
                 <tr>
-                    <td id="cell-7"></td>
-                    <td id="cell-8"></td>
-                    <td id="cell-9"></td>
+                    <td id="cell-7" aria-label="Bottom-Left Box"></td>
+                    <td id="cell-8" aria-label="Bottom-Middle Box"></td>
+                    <td id="cell-9" aria-label="Bottom-Right Box"></td>
                 </tr>
             </table>
         </div>
         <br>
         <div>
-            <button id="clear" onclick="newGame()">New Game</button>
-            <button id="reset" onclick="resetGame()">Reset Scores</button>
+            <button id="clear" onclick="newGame()" aria-label="Start a New Game">New Game</button>
+            <button id="reset" onclick="resetGame()" aria-label="Reset Score count and Start New Game">Reset Scores</button>
         </div>
         <div id="scores-area">
             <div class="scores">Games Won - <span id="games-won"><strong>0</strong></span></div>
@@ -78,7 +78,7 @@
     <!-- Feedback Form -->
     <footer>
         <div>
-            <button id="feedback-button">Leave some feedback!</button>
+            <button id="feedback-button" aria-label="Provide some Feedback">Leave some feedback!</button>
         </div>
         <div id="form-outer">
             <div id="form-inner">
