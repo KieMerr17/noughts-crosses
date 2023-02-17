@@ -408,6 +408,13 @@ You can clone the repository by following these steps:
 ### Code
 - I sampled the basic code structure from the 'Love Maths' walkthrough project for the scoring element of the game. 
 I adjusted where needed in order for it to acheive what i was looking for.
+- The rules for the game in the index.html file were sourced online through a Google search and copied into the document.
+- Code written in the contact.js file was sourced from the emailJS website. I followed the tutorial to install the code correctly.
+The tutorial shows to include the code in the Script element on a HTML document, i have adjusted slightly to allow it to function in its own .js file.
+(https://www.emailjs.com/docs/tutorial/creating-contact-form/)
+- The drop-down menu feature to change the gameboard color was sourced from a w3Schools tutorial and adjusted to suit my project.
+(https://www.w3schools.com/Css/css_dropdowns.asp)
+
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
